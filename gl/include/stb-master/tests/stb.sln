@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "c_lexer_test", "c_lexer_test.dsp", "{AB600C43-FFA8-498B-8B2F-B7DB8398B4A3}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "herringbone", "herringbone.dsp", "{47D3E972-B04E-448B-8369-90488F08F543}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "herringbone_map", "herringbone_map.dsp", "{16001E3F-1371-4E82-9928-4A052A8AEEC5}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "image_test", "image_test.dsp", "{BE36EE40-66C4-4BFF-A40F-14C932FD4C50}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "make_readme", "..\tools\make_readme.dsp", "{24304742-6696-4707-B67F-9A572AFE11EF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "pg_test", "pg_test\pg_test.dsp", "{1867CDAA-36B5-4EF5-AD84-A54504F1C507}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "resize", "resize.dsp", "{01CAC0C3-9642-48B1-8E40-15331A9F249E}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "stb", "stb.dsp", "{0AE6BB7D-1C29-4689-838E-1E858DDEC6E6}"
+	ProjectSection(DevStudioProjDeps) = postProject
+		0 = stb_cpp
+		1 = image_test
+		2 = stretch_test
+		3 = c_lexer_test
+	EndProjectSection
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "stb_cpp", "stb_cpp.dsp", "{30791C52-DD67-40A2-82AB-5EEACFFA0138}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "stretch_test", "stretch_test.dsp", "{4E24F0A1-7337-46A6-B4D6-81C4438E9BB0}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "unicode", "..\tools\unicode\unicode.dsp", "{1E4080B3-5CCC-482B-A1C1-9920D03189FF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "vorbseek", "vorbseek\vorbseek.dsp", "{0CBEE602-DD4C-42D3-AFE3-B6762CCDFE30}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DF5D30B-6EB0-4F6A-A6F1-BE2E27840E55}
+	EndGlobalSection
+EndGlobal

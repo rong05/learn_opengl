@@ -1,7 +1,7 @@
 #include "Shader.h"
 
 
-Shader::Shader(const char * vertexPath, char * fragmentPath, const char* geometryPath)
+Shader::Shader(const char* vertexPath, const char* fragmentPath, const char* geometryPath)
 {
 	std::string vertexCode;
 	std::string fragmentCode;
@@ -123,27 +123,28 @@ void Shader::setVec4(const std::string & name, const glm::vec4 & value) const
 	glUniform4fv(glGetUniformLocation(ID, name.c_str()), 1, &value[0]);
 }
 
-void Shader::setVec4(const std::string & name, float x, float y, float z, float w) const
+void Shader::setVec4(const std::string &name, float x, float y, float z, float w) const
 {
 	glUniform4f(glGetUniformLocation(ID, name.c_str()), x, y, z, w);
 }
 
-void Shader::setMat2(const std::string & name, const glm::mat2 & mat) const
+void Shader::setMat2(const std::string & name, const glm::mat2 &mat) const
 {
 	glUniformMatrix2fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);
 }
 
-void Shader::setMat3(const std::string & name, const glm::mat3 & mat) const
+void Shader::setMat3(const std::string & name, const glm::mat3 &mat) const
 {
 	glUniformMatrix3fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);
 }
-	
 
-// ------------------------------------------------------------------------
 void Shader::setMat4(const std::string &name, const glm::mat4 &mat) const
 {
 	glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);
 }
+
+// ------------------------------------------------------------------------
+
 
 void Shader::checkCompileErrors(unsigned int shader, std::string type)
 {
